@@ -1,4 +1,20 @@
-EXAMPLE
+#WASM REST
+
+```
+git clone git@github.com:inzlukasz1990/wasm_rest.git
+cd wasm_rest
+mkdir wasm
+```
+
+##WASM binary files
+```
+git clone git@github.com:inzlukasz1990/rest_call_wasm.git
+cd rest_call_wasm
+wasm-pack build --target web
+```
+Copy ./pkg content to ../wasm_rest/wasm directory.
+
+##EXAMPLE
 
 ```
 // App.js
@@ -78,5 +94,10 @@ function App() {
 }
 
 export default App;
+```
+
+Run server
+```
+npm start
 ```
 
